@@ -4,28 +4,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="CSS/style.css" rel="stylesheet" >
         <meta charset="UTF-8">
+        <!-- Police google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+        <!-- Icone Fontawesome -->
         <script src="https://kit.fontawesome.com/a099555910.js" crossorigin="anonymous"></script>
         <title>Booki</title>
     </head>
     <header>
         <img src="/Images/logo/Booki.png" alt="logo booki">
         <nav>
-            <a href="#Hebergement">Hebergements</a>
+            <a href="#Hebergement" id="Hebergement">Hebergements</a>
             <a href="#Activites">Activités</a>
         </nav>
     </header>
     <main>
         <div>
-
             <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <form method="get" action="">
                 <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <label for="recherche"></label> : <input type="search" name="recherche" id="recherche">
+                   <i class="fa-solid fa-location-dot"></i>
+                    <label for="recherche"></label>  
+                    <input type="search" name="recherche" id="recherche">
                     <button>Rechercher</button>
                 </p>
             </form>
@@ -33,20 +35,20 @@
                 <p>
                     Filtres
                     <div class="Eco">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        Economique
+                       <i class="fa-solid fa-money-bill-wave"></i>
+                       <span class="bordure">Economique</span>
                     </div>
-                    <div class="Familial">
+                    <div class="Familial">    
                         <i class="fa-solid fa-person"></i>
-                        Familial
+                        <span class="bordure">Familial</span>
                     </div>
-                    <div class="Romantique">
+                    <div class="Romantique">                    
                         <i class="fa-solid fa-heart"></i>
-                        Romantique
+                        <span class="bordure">Romantique</span>
                     </div>
-                    <div class="Pet">
+                    <div class="Pet">             
                         <i class="fa-solid fa-dog"></i>
-                        Animaux autorisés
+                        <span class="bordure">Animaux autorisés</span>
                     </div>
                 </p>
             </div>
@@ -185,10 +187,64 @@
     </div>
     <div class="red-activites">
         <h2 id="Activites">Activités à Marseille</h2>
-
+        <div class="Images-activites">
+            <div class="card">
+                <a href="#">                   
+                    <img src="/Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image d'activité" style="width:100%">
+                    <div class="container">
+                        <h5><b>Vieux-Port</b></h5>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">                   
+                    <img src="/Images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image d'activité" style="width:100%">
+                    <div class="container">
+                        <h5><b>Fort de Pomègues</b></h5>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">                   
+                    <img src="/Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image d'activité" style="width:100%">
+                    <div class="container">
+                        <h5><b>Parc national des Calanques</b></h5>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">                   
+                    <img src="/Images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image d'activité" style="width:100%">
+                    <div class="container">
+                        <h5><b>Notre-Dame-de-la-Garde</b></h5>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     </main>
     <footer>
-        
+        <div class="A-propos">
+            <h4>A propos</h4>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales</a></li>
+                <li><a href="#">Données et confidentialité</a></li>   
+            </ul>
+        </div>
+        <div class="Nos hébergements">
+            <h4>Nos hébérgements</h4>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>   
+                <li><a href="#">Proposer votre hôtel</a></li>   
+            </ul>
+        </div>
+        <div class="Assistance">
+            <h4>Assistance</h4>
+            <ul>
+                <li><a href="#">Centre d'aide</a> </li>  
+                <li><a href="#">Nous contacter</a></li>   
+            </ul>
+        </div>
     </footer>
     </html>
