@@ -1,5 +1,99 @@
 *{
     font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+header img{
+  width: 61.09px;
+  height: 19px;
+}
+nav{
+  justify-content: space-around;
+}
+
+nav a {
+  padding: 3em;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+nav #Hebergement{
+  color: #0065FC;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: large;
+  font-weight: bolder;
+}
+
+p{
+  font-size: small;
+}
+
+input{
+  width: 332px;
+  height: 49px;
+}
+
+form i{
+  border-radius: 15px 0px 0px 15px;  
+  border: 1px solid black;
+  background: #F2F2F2;
+}
+
+form{
+  display:flex;
+  height: 49px;
+  align-content: center;
+  margin-bottom: 32px;
+}
+
+button{
+position: relative;
+right: 4.5em;
+background: #0065FC;
+border: 1px solid #0065FC;
+border-radius: 0px 15px 15px 0px;
+color: white;
+width: 132px;
+height: 49px
+}
+
+.Filtres{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+.Filtres i{
+  color:#0065FC;
+}
+.Filtres div{
+ border-radius:100px/160px  ;
+ border: 1px solid #d9d9d9; 
+ padding: 15px;
+}
+
+.Filtres div:hover{
+  background-color: #deebff;
+}
+
+.Filtres p{
+  font-weight: 900;
+}
+
+.Filtres .bordure{
+  padding-left: 10px;
 }
 
 .card {
