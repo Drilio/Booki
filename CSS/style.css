@@ -1,6 +1,12 @@
 *{
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     color: black;
+  }
+
+html{
+  margin: 50px;
+  width: 1440px;
 }
 
 header{
@@ -31,14 +37,12 @@ a{
 }
 
 h1{
-  font-size: large;
+  font-size: 22px;
   font-weight: bolder;
 }
-
 p{
-  font-size: small;
+  font-weight: lighter;
 }
-
 input{
   width: 332px;
   height: 49px;
@@ -48,6 +52,7 @@ form i{
   border-radius: 15px 0px 0px 15px;  
   border: 1px solid black;
   background: #F2F2F2;
+  font-size: 49px;
 }
 
 form{
@@ -75,7 +80,7 @@ height: 49px
   width: 50%;
   align-items: center;
 }
-.Filtres i{
+.Filtres i, .card i{
   color:#0065FC;
 }
 .Filtres div{
@@ -96,11 +101,55 @@ height: 49px
   padding-left: 10px;
 }
 
+.info{
+  color: #0065FC;
+  border: 1px solid #d9d9d9;
+  border-radius: 50% 50% 50% 50% ;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 11px;
+  font-weight: normal;
+}
+
+.hebergement-card aside{
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: row;
+ }
+
+.offres-logement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  width: 100%;
+  align-items: center;
+}
+
+ h2{
+  font-size: 22px;
+ }
+
+ .hebergement-card{
+  display: flex;
+  width: 65%;
+  /* height: 626px; */
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+ }
+ 
+.populaire-card{
+  background-color: #F2F2F2;
+  margin: 40px;
+}
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
+    height: 199px;
+    width: 246px;
+    margin: 31px;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -113,6 +162,29 @@ height: 49px
     padding: 2px 16px;
   }
   
-  img {
+  .offres-logement img{
     border-radius: 5px 5px 0 0;
+    height: 124px;
+    width: 246px;
   }
+  .hebergement-card h2{
+    padding-top: 42px;
+    padding-left: 40px;
+  }
+  .card h4, .card p, .card i{
+    margin: 0;
+  }
+
+  .hebergement-card h2, .hebergement-card .afficher-plus{
+    width: 100%;
+  }
+  .afficher-plus{
+    padding-left: 44px;
+    padding-bottom: 46px;
+    font-weight: bold;
+  }
+
+  .populaire-card{
+  margin-right: 75px;  
+}
+
