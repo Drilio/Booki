@@ -13,7 +13,7 @@
         <title>Booki</title>
     </head>
     <header>
-        <img src="/Images/logo/Booki.png" alt="logo booki">
+        <a href="Index.html"><img src="/Images/logo/Booki.png" alt="logo booki"></a>
         <nav>
             <a href="#Hebergement" id="Hebergement">Hebergements</a>
             <a href="#Activites">Activités</a>
@@ -28,38 +28,25 @@
                    <i class="fa-solid fa-location-dot"></i>
                     <label for="recherche"></label>  
                     <input placeholder="Marseille, France" type="search" name="recherche" id="recherche">
-                    <button>Rechercher</button>
+                    <button id="rechercher">Rechercher</button>
                 </p>
             </form>
             <div class="Filtres">
                 <p>
                     Filtres
-                    <div class="Eco">
-                       <i class="fa-solid fa-money-bill-wave"></i>
-                       <span class="bordure">Économique</span>
-                    </div>
-                    <div class="Familial">    
-                        <i class="fa-solid fa-person"></i>
-                        <span class="bordure">Familial</span>
-                    </div>
-                    <div class="Romantique">                    
-                        <i class="fa-solid fa-heart"></i>
-                        <span class="bordure">Romantique</span>
-                    </div>
-                    <div class="Pet">             
-                        <i class="fa-solid fa-dog"></i>
-                        <span class="bordure">Animaux autorisés</span>
-                    </div>
                 </p>
+                        <button class="bordure"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>   
+                        <button class="bordure"><i class="fa-solid fa-person"></i>Familial</button>                   
+                        <button class="bordure"><i class="fa-solid fa-heart"></i>Romantique</button>             
+                        <button class="bordure"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
             </div>
             <p><span class="info">i</span> Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-        
+        </div>     
     <section class="offres-logement">  
         <div class="hebergement-card">
                 <h2>Hébergements à Marseille</h2>
-                <div class="card">
-                    <a href="#">
+                <figure class="card">
+                <a href="#">
                         <img src="/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                         <div class="container">
                             <h4><b>Auberge La Canebière</b></h4>
@@ -71,8 +58,8 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div> 
-                <div class="card">
+                </figure> 
+                <figure class="card">
                     <a href="#">
                         <img src="/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                         <div class="container">
@@ -85,8 +72,8 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div> 
-                <div class="card">
+                </figure> 
+                <figure class="card">
                     <a href="#">
                         <img src="/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                         <div class="container">
@@ -99,8 +86,8 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div> 
-                <div class="card">
+                </figure> 
+                <figure class="card">
                     <a href="#">
                         <img src="/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                         <div class="container">
@@ -113,8 +100,8 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div>
-                <div class="card">
+                </figure>
+                <figure class="card">
                     <a href="#">
                         <img src="/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                         <div class="container">
@@ -127,8 +114,8 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div>
-                <div class="card">
+                </figure>
+                <figure class="card">
                     <a href="#">
                     
                         <img src="/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image d'appartement" style="width:100%">
@@ -142,14 +129,14 @@
                             <i class="fa-solid fa-star white"></i>
                         </div>
                     </a>
-                </div>
+                </figure>
                 <span class="afficher-plus"><a id="afficher-plus" href="#">Afficher plus</a></span>   
         </div>
         <aside class="populaire-card">
             <h2 class="populaire">Les plus populaires <i class="fa-solid fa-chart-line"></i></h2>
             
             <a href="#">
-            <div class="card">                    
+            <figure class="card">                    
                 <img src="/Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                     <div class="container">
                         <h4><b>Hôtel Le soleil du matin</b></h4>
@@ -160,10 +147,10 @@
                         <i class="fa-solid fa-star blue"></i>
                         <i class="fa-solid fa-star white"></i>
                     </div>            
-            </div>
+            </figure>
             </a>
             <a href="#">
-            <div class="card">                          
+            <figure class="card">                          
                     <img src="/Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                     <div class="container">
                         <h4><b>Chambre d'hôtes Au coeur de l'eau</b></h4>
@@ -174,10 +161,10 @@
                         <i class="fa-solid fa-star blue"></i>
                         <i class="fa-solid fa-star white"></i>
                     </div>                
-            </div>
+            </figure>
             </a>
-            <a href="#"></a>
-            <div class="card">                 
+            <a href="#">
+                <figure class="card">                 
                     <img src="/Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image d'appartement" style="width:100%">
                     <div class="container">
                         <h4><b>Hôtel Bleu et Blanc</b></h4>
@@ -188,7 +175,7 @@
                         <i class="fa-solid fa-star blue"></i>
                         <i class="fa-solid fa-star white"></i>
                     </div>           
-            </div>
+                </figure>
             </a>
         </aside>
     </section>
@@ -196,38 +183,38 @@
     <section class="activites">
         
         <div class="images-activites">
-            <div class="card">
+            <figure class="card">
                 <a href="#">                   
                     <img src="/Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image d'activité" style="width:100%">
                     <div class="container">
                         <h5><b>Vieux-Port</b></h5>
                     </div>
                 </a>
-            </div>
-            <div class="card">
+            </figure>
+            <figure class="card">
                 <a href="#">                   
                     <img src="/Images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image d'activité" style="width:100%">
                     <div class="container">
                         <h5><b>Fort de Pomègues</b></h5>
                     </div>
                 </a>
-            </div>
-            <div class="card">
+            </figure>
+            <figure class="card">
                 <a href="#">                   
                     <img src="/Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image d'activité" style="width:100%">
                     <div class="container">
                         <h5><b>Parc national des Calanques</b></h5>
                     </div>
                 </a>
-            </div>
-            <div class="card">
+            </figure>
+            <figure class="card">
                 <a href="#">                   
                     <img src="/Images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image d'activité" style="width:100%">
                     <div class="container">
                         <h5><b>Notre-Dame-de-la-Garde</b></h5>
                     </div>
                 </a>
-            </div>
+            </figure>
         </div>
     </section>
     </main>

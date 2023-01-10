@@ -7,6 +7,7 @@
 html{
   margin: 50px;
   max-width: 1400px;
+  margin: auto;
 }
 
 header{
@@ -76,8 +77,18 @@ form input::placeholder{
   opacity: 1;
 }
 
-
 button{
+  text-decoration: none;
+  border: none;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  border-radius:100px/160px  ;
+  border: 1px solid #d9d9d9; 
+  padding: 15px;
+}
+
+
+form button{
 font-weight: bold;
 position: relative;
 right: 4.5em;
@@ -111,14 +122,13 @@ height: 49px
   color: #F2F2F2;
   padding-top: 10px;
 }
-.Filtres div{
- border-radius:100px/160px  ;
- border: 1px solid #d9d9d9; 
- padding: 15px;
+
+.Filtres button:hover{
+  background-color: #deebff;
 }
 
-.Filtres div:hover{
-  background-color: #deebff;
+.Filtres button i{
+  margin-right: 10px;
 }
 
 .Filtres p{
@@ -148,8 +158,9 @@ height: 49px
 }
 .offres-logement h2{
   margin-top: 42px;
-  margin-bottom: 23px;
+  margin-bottom: 0;
   margin-left: 40px;
+  height: 26px;
 }
 
  h2{
@@ -184,6 +195,10 @@ height: 49px
     background-color: #ffffff;
     padding: 5px;
   }
+
+  .card img{
+    object-fit: cover;
+  }
   
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -212,8 +227,9 @@ height: 49px
 .afficher-plus{
   padding-left: 44px;
   font-weight: bold;
- vertical-align: middle;
+  vertical-align: middle;
 }
+
 
 .populaire-card .card{
   display: flex;
@@ -230,7 +246,9 @@ height: 49px
   max-width: 144px;
   border-radius: 20px; 
 }
-
+.populaire-card h2{
+  margin-bottom: 50px;
+}
 .populaire-card h2 i{
 margin-left: 110px;
 color: #0065FC;
@@ -286,3 +304,4 @@ footer ul{
   padding-left: 0;
   line-height: 30px;
 }
+
