@@ -1,11 +1,10 @@
 *{
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
     color: black;
   }
 
 html{
-  margin: 50px;
+  margin: 2.4vw;
   max-width: 1400px;
   margin: auto;
 }
@@ -104,7 +103,7 @@ height: 49px
   display: flex;
   align-content: center;
   justify-content: space-around;
-  width: 70%;
+  width: 80%;
   align-items: center;
   font-weight: bold;
   font-size: 17px;
@@ -112,7 +111,6 @@ height: 49px
 
 .blue{
   color:#0065FC;
-  padding-top: 10px;
 }
 .Filtres i{
   color: #0065FC
@@ -161,11 +159,8 @@ height: 49px
   margin-bottom: 0;
   margin-left: 40px;
   height: 26px;
+  font-size: 100%;
 }
-
- h2{
-  font-size: 22px;
- }
 
  .hebergement-card{
   display: flex;
@@ -184,20 +179,29 @@ height: 49px
   border-radius: 20px;
 }
 .card {
-    /* Add shadows to create the "card" effect */
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     transition: 0.3s;
     border-radius: 20px; 
-    height: 199px;
     width: 25%;
-    margin-left: 31px;
-    margin-right: 31px;
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
     background-color: #ffffff;
     padding: 5px;
   }
-
+  .container {
+    padding: 2px 16px;
+    font-size: 90%;
+  }
   .card img{
     object-fit: cover;
+    width: 100%;
+    min-width: 137px ;
+  }
+
+  .hebergement-card .card{
+    max-height: 199px;
   }
   
   /* On mouse-over, add a deeper shadow */
@@ -206,14 +210,20 @@ height: 49px
   }
   
   /* Add some padding inside the card container */
-  .container {
-  padding: 2px 16px;
+  .hebergement-card .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.star{
+  display: flex;
 }
   
 .hebergement-card img{
   border-radius: 5px 5px 0 0;
   height: 124px;
-  width: 246px;
   border-radius: 20px 20px 0px 0px; 
 }
 
@@ -221,9 +231,11 @@ height: 49px
   margin: 0;
 }
 
+
 .hebergement-card h2, .hebergement-card .afficher-plus{
   width: 100%;
 }
+
 .afficher-plus{
   padding-left: 44px;
   font-weight: bold;
@@ -236,8 +248,12 @@ height: 49px
   flex-direction: row;
   justify-content:flex-start;
   height: 144px;
-  width: 343px;
-  margin-bottom: 32px;
+  width: 80%;
+}
+.populaire-card .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .populaire-card .card img{
@@ -250,12 +266,8 @@ height: 49px
   margin-bottom: 50px;
 }
 .populaire-card h2 i{
-margin-left: 110px;
+margin-left: 6vw;
 color: #0065FC;
-}
-
-.populaire-card .card i{
-  margin-top: 44px;
 }
 
 #titre-activites{
@@ -305,3 +317,6 @@ footer ul{
   line-height: 30px;
 }
 
+@media screen {
+  
+}
