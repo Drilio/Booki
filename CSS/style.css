@@ -108,6 +108,16 @@ height: 49px
   font-weight: bold;
   font-size: 17px;
 }
+.filtres-phone{
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+}
 
 .blue{
   color:#0065FC;
@@ -145,7 +155,16 @@ height: 49px
   padding-right: 6px;
   margin: 40px 11px 40px 0;
   font-weight: normal;
+  position:relative;
+  top: 34px;
 }
+
+#info-tablette{
+  position: relative;
+  left: 27px;
+  margin-bottom: 30px;
+}
+
 
 .offres-logement{
   display: flex;
@@ -260,7 +279,7 @@ height: 49px
   display: inline-block;
   max-height: 150px;
   max-width: 144px;
-  border-radius: 20px; 
+  border-radius: 20px 0 0 20px; 
 }
 .populaire-card h2{
   margin-bottom: 50px;
@@ -328,6 +347,10 @@ footer ul{
   line-height: 30px;
 }
 
+.fa-magnifying-glass, .blue-line, .grey-line{
+  display: none;
+}
+
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px */
 @media all and (min-width: 768px) and (max-width: 992px){
@@ -346,7 +369,6 @@ footer ul{
   .Filtres{
     width: 95%;
     margin-top: 45px;
-    margin-bottom: 35px;
   }
 
   #info-tablette{
@@ -449,4 +471,196 @@ footer ul{
     margin-top: 45px;
   }
 
+  .fa-magnifying-glass, .blue-line, .grey-line{
+    display: none;
+  }
+
+  #info-tablette{
+    position: relative;
+    left: 27px;
+   }
+
+   .info{
+    position:relative;
+    top: 34px;
+    margin-top: 0;
+   }
+
+}
+
+@media all and (max-width: 767px){
+  html, body{
+    margin: 0 0 0 0;
+  }
+
+  header{
+    display:block
+  }
+
+  header img{
+    display: block;
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 50px;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0;
+    margin: auto;
+  }
+
+  nav a:hover{
+    text-decoration: none;
+  }
+  nav #Hebergement  {
+    color: black;
+  }
+
+  .blue-line, .grey-line{
+    height: 3px;
+    width: 50%;
+  }
+  .line{
+    display: flex;
+    flex-direction: row;
+  }
+  .blue-line{
+    background-color: #0065FC;
+  }
+
+  .grey-line{
+    background-color: #F2F2F2;
+  }
+
+  .recherches-filtres{
+    margin: 20px;
+  }
+  #rechercher{
+    display: none;
+  }
+  form{
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  form p{
+    width: 100%;
+  }
+
+ .fa-magnifying-glass{
+  display: inline-block;
+  font-weight: bold;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  color: white;
+  width: 5%;
+ }
+
+ .Filtres{
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+ 
+ .filtres-phone{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .filtres-phone button{
+  display:flex ;
+  width: 45%;
+  margin: 2%;
+ }
+ .filtres-phone button span{
+  font-size: 80%;
+ }
+
+ input{
+  width:65%;
+ }
+
+ .Filtres .bordure{
+  padding-left: 2%;
+ }
+ 
+ .info{
+  position:relative;
+  top: 34px;
+ }
+
+#info-tablette{
+  position: relative;
+  left: 27px;
+ }
+
+.offres-logement{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+ }
+
+.hebergement-card{
+  order: 2;
+  width: 100%;
+  justify-content: center;
+  background-color: #FFFFFF;
+ }
+
+ .hebergement-card h2{
+  margin-left: 15px;
+ }
+
+.hebergement-card .card, .populaire-card .card{
+  width: 90%;
+ }
+.hebergement-card .card .container, .populaire-card .card .container{
+line-height: 150%;
+}
+.afficher-plus{
+  display: none;
+}
+
+.populaire-card a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.populaire-card{
+  order: 1;
+  width: 100%;
+  border-radius: 0%;
+}
+
+.populaire-card h2{
+  margin: 20px 0 0 20px;
+}
+.images-activites{
+  flex-direction: column;
+}
+.images-activites .card a{
+  width: 100%;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin-left: 0;
+}
+
+.info-footer{
+  width: 100%;
+  margin-left: 30px;
+}
 }
