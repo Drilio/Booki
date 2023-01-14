@@ -334,6 +334,24 @@ footer ul{
   html{
     margin: 45px 2.4vw 45px 2.4vw;
   }
+
+  nav a:hover{
+    text-decoration: none;
+  }
+
+  nav #Hebergement{
+    color: black;
+  }
+  
+  .Filtres{
+    width: 95%;
+    margin-top: 45px;
+    margin-bottom: 35px;
+  }
+
+  #info-tablette{
+    margin-bottom: 35px;
+  }
   .hebergement-card{
     width: 100%;
    }
@@ -359,7 +377,7 @@ footer ul{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 28%; 
+    height: 35%; 
    }
 
   .populaire-card a{
@@ -395,11 +413,7 @@ footer ul{
     }
 
    .activites{
-    margin-top: 300px;
-   }
-
-   .activites h2{
-    margin-top: ;
+    margin-top: 375px;
    }
 
    .images-activites .card img{
