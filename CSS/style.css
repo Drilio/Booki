@@ -285,11 +285,21 @@ color: #0065FC;
   display: flex;
   flex-direction: column;
   width: 21%;
-  height: 445px;
+  height: 389px;
   border-radius:20px;;
   margin: auto;
   background-color: #FFFFFF;
   padding: 0 0 20px 0;
+}
+
+.images-activites .container{
+  display: flex;
+  position: relative;
+  bottom: 80px;
+  background-color: #FFFFFF;
+  height: 80px;
+  font-size: 175%;
+  align-items: center;
 }
 
 .images-activites .card img{
@@ -297,6 +307,7 @@ color: #0065FC;
   width: 100%;
   margin: 0;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 
 footer{
@@ -317,6 +328,111 @@ footer ul{
   line-height: 30px;
 }
 
-@media screen {
-  
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px */
+@media all and (min-width: 768px) and (max-width: 992px){
+  html{
+    margin: 45px 2.4vw 45px 2.4vw;
+  }
+  .hebergement-card{
+    width: 100%;
+   }
+   .hebergement-card .card{
+    width: 28%;
+    height: 28%;
+   }
+
+   .hebergement-card .container{
+    height: 30%;
+   }
+   .hebergement-card h2{
+    margin-bottom: -5%;
+   }
+
+   .hebergement-card .card h4, .hebergement-card .card p, .populaire-card .card h4, .populaire-card .card p{
+    font-size: 80%;
+    padding: 3px;
+   }
+   
+   .populaire-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 28%; 
+   }
+
+  .populaire-card a{
+    display: flex;
+    flex-direction: column; 
+    width: 27%;
+    margin-right: 5%;
+  }
+
+  .populaire-card h2{
+    width: 100%;
+    margin-bottom: -1%;
+    margin-top: 3%;
+  }
+
+  .populaire-card .card{
+    width: 100%;
+    height: 60%;
+  }
+
+  .populaire-card .card img{
+    min-width: 0;
+    max-height: 144px;
+    max-width: 106px;
+  }
+
+  .populaire-card .container{
+    padding: 2px 8px;
+  }
+
+  .populaire-card h2 i{
+    margin-left: 70%;
+    }
+
+   .activites{
+    margin-top: 300px;
+   }
+
+   .activites h2{
+    margin-top: ;
+   }
+
+   .images-activites .card img{
+    height: 267px;
+    width: 33%;
+   }
+
+   .images-activites .card{
+    height: 267px;
+   }
+
+   .images-activites .container{
+    display: flex; 
+    position: relative;
+    bottom: 30px;
+    background-color: #FFFFFF;
+    height: 8%;
+    font-size: 100%;
+    align-items: center;
+  }
+
+  .images-activites h5{
+    padding-top:2px;
+    font-size: 80%;
+  }
+  footer{
+   width: 90%;
+   margin-left: 0;
+   margin-right: 0;
+  }
+  .info-footer h4{
+    margin: auto;
+    margin-top: 45px;
+  }
+
 }
