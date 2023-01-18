@@ -27,7 +27,7 @@ header img{
 }
 
 header a{
-  width: 100%;
+  width: 75%;
 }
 nav{
   display: flex;
@@ -319,7 +319,8 @@ color: #0065FC;
 
 #titre-activites{
   margin-top: 120px;
-  margin-left: 45px;
+  margin-left: 50px;
+  font-size: inherit;
 }
 
 .images-activites{
@@ -346,7 +347,6 @@ color: #0065FC;
   box-shadow: none;
   transition: none;
   border:0;
-
 }
 
 .images-activites .card{
@@ -404,9 +404,8 @@ footer ul{
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px */
 @media all and (min-width: 768px) and (max-width: 992px){
   
-  main{
-    margin-left: 45px;
-    margin-right: 45px;
+  header{
+    margin: 0 40px 0 4%;
   }
   nav a:hover{
     text-decoration: none;
@@ -414,15 +413,18 @@ footer ul{
 
   nav #Hebergement{
     color: black;
+    border-top: none;
   }
   
   .Filtres{
-    width: 95%;
+    width: 100%;
     margin-top: 45px;
   }
-
+  #rechercher {
+    font-size: 15px;
+  }
   .Filtres .bordure{
-    margin-left: 30px;
+    margin-left: 60px;
   }
 
   #info-tablette{
@@ -430,15 +432,18 @@ footer ul{
   }
   .cards{
     margin-top: 60px;
+    justify-content: center;
   }
 
   .cards-pop{
     flex-direction: row;
   }
   .hebergement-card{
-    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+    width: 92%;
     height: auto;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
    }
 
    .hebergement-card .card{
@@ -450,6 +455,7 @@ footer ul{
 
    .hebergement-card .container{
     height: 30%;
+    padding-top: 2%;
    }
    .hebergement-card h2{
     margin-bottom: -5%;
@@ -459,12 +465,16 @@ footer ul{
     font-size: 80%;
     padding: 3px;
    }
+
+   .afficher-plus{
+    line-height: 35px;
+   }
    
    .populaire-card{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 92%;
     height: 35%;
     margin-top: 50px;
    }
@@ -512,7 +522,12 @@ footer ul{
     }
 
    .activites{
-    margin-top: 375px;
+    margin-top: 125px;
+   }
+
+   .images-activites a{
+    height: 267px;
+    margin: 0 0 0 0;
    }
 
    .images-activites .card img{
@@ -520,21 +535,20 @@ footer ul{
     width: 33%;
    }
 
-   .images-activites .card{
-    height: 267px;
+   .images-activites .container{
+    height: 45px;
    }
-
 
   .images-activites .card h5{
     padding-top:2px;
     font-size: 80%;
     padding-left: 0px;
+    padding-bottom: 0;
   }
   
   footer{
-   width: 90%;
-   margin-left: 0;
-   margin-right: 0;
+   width: 92%;
+   margin-top: 120px;
   }
   .info-footer h4{
     margin: auto;
@@ -560,11 +574,25 @@ footer ul{
 
 @media all and (max-width: 767px){
   html, body{
-    margin: 0 0 0 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   header{
-    display:block
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    width:100%;
+  }
+
+  header a{
+    width: auto;
   }
 
   header img{
@@ -574,22 +602,44 @@ footer ul{
     margin-bottom: 50px;
   }
 
-  nav{
+  .menu, .underline{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-direction: column;
   }
   
   nav a {
-    display: block;
-    padding: 0;
-    margin: auto;
+  padding: 0;
+  margin: auto;
+  padding-bottom: 30px;
   }
 
   nav a:hover{
     text-decoration: none;
   }
+
   nav #Hebergement  {
     color: #0065FC;
+    border-top: none;
+  }
+
+  .underline-blue{
+    width:50%;
+    border-bottom: solid #0065FC 3px;
+  }
+
+  .underline-grey{
+    width: 50%;
+    border-bottom: solid grey 3px;
   }
 
   .blue-line, .grey-line{
@@ -610,7 +660,7 @@ footer ul{
   }
 
   .recherches-filtres{
-    margin: 2%;
+    margin: 4%;
   }
   #rechercher{
     display: none;
@@ -680,27 +730,33 @@ footer ul{
   display: flex;
   flex-direction: column;
   height: auto;
+  align-items: center;
  }
 
 .hebergement-card{
   order: 2;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   background-color: #FFFFFF;
   margin-bottom: 40px;
  }
 
  .hebergement-card h2{
-  margin-left: 15px;
+  margin-left: 5px;
  }
 
 .hebergement-card .card, .populaire-card .card, .images-activites .card{
-  width: 90%;
-  /* max-width: 450px; */
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
  }
-.hebergement-card .card .container, .populaire-card .card .container{
+
+
+ .container div{
+  padding: 0 0 0 16px;
+ }
+
+.populaire-card .card .container{
 line-height: 150%;
 }
 .afficher-plus{
@@ -718,6 +774,9 @@ line-height: 150%;
   border-radius: 0%;
 }
 
+.populaire-card .card{
+  width: 90%;
+}
 
 .populaire-card img{
   height: 100%;
@@ -725,12 +784,16 @@ line-height: 150%;
 
 #titre-activites{
 margin-left: 5%;
-width: 127px;
+width: 140px;
 margin-top: 60px;
+font-size: 27px;
 }
+
+
 .images-activites{
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .images-activites .card{
@@ -739,10 +802,13 @@ margin-top: 60px;
 }
 
 .images-activites .card img{
-  height: 334px;
+  height: 134px;
+  min-height: unset;
 }
-.images-activites .card a{
-  width: 100%;
+
+.images-activites a{
+  width: 90%;
+  height: 190px;
 }
 
 .images-activites .card h5{
@@ -755,6 +821,7 @@ footer{
   flex-direction: column;
   width:100%;
   margin-left: 0;
+  margin-top: 40px;
 }
 
 .info-footer{
