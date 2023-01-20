@@ -29,7 +29,7 @@ header img{
 header a{
   width: 75%;
 }
-nav{
+.menu{
   display: flex;
   justify-content: space-around;
 }
@@ -191,10 +191,14 @@ height: 49px
 .offres-logement h2{
   margin-top: 40px;
   margin-bottom: 25px;
-  margin-left: 40px;
   font-size: 100%;
-  width: 100%;
 }
+
+.hebergement-card h2{
+  margin-left: 2.5%;
+}
+
+
 .cards{
   display: flex;
   flex-wrap: wrap;
@@ -290,6 +294,13 @@ height: 49px
   padding-left: 40px;
   font-weight: bold;
   vertical-align: middle;
+}
+
+.populaire-card h2{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 13%;
+  margin-left: 5%;
 }
 
 .populaire-card .card{
@@ -489,7 +500,7 @@ footer ul{
   .populaire-card h2{
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 4.5%;
     width: 100%;
     margin-bottom: -5%;
     margin-top: 3%;
@@ -516,10 +527,6 @@ footer ul{
   .populaire-card .container div{
     padding: 0;
   }
-
-  .populaire-card h2 i{
-    margin-left: 70%;
-    }
 
    .activites{
     margin-top: 125px;
@@ -763,6 +770,10 @@ line-height: 150%;
   display: none;
 }
 
+.populaire-card h2{
+  margin-right: 4%;
+}
+
 .populaire-card a{
   width: 100%;
   display: flex;
@@ -780,6 +791,10 @@ line-height: 150%;
 
 .populaire-card img{
   height: 100%;
+}
+
+.activites{
+  margin-top: 900px;
 }
 
 #titre-activites{
