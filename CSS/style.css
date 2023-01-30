@@ -257,7 +257,8 @@ height: 49px
 
   .card img{
     object-fit: cover;
-    min-width: 137px ;
+    min-width: 137px ; 
+    width: 100%;
   }
 
   .hebergement-card .card{
@@ -539,7 +540,7 @@ footer ul{
 
    .images-activites .card img{
     height: 267px;
-    width: 33%;
+    width: 100%;
    }
 
    .images-activites .container{
@@ -743,6 +744,7 @@ footer ul{
 .hebergement-card{
   order: 2;
   width: 90%;
+  height: auto;
   justify-content: center;
   background-color: #FFFFFF;
   margin-bottom: 40px;
@@ -791,10 +793,6 @@ line-height: 150%;
 
 .populaire-card img{
   height: 100%;
-}
-
-.activites{
-  margin-top: 900px;
 }
 
 #titre-activites{
