@@ -41,6 +41,7 @@ header a{
 
 nav a {
   padding-top: 30px;
+  font-size: 20px;
 }
 
 nav #Hebergement{
@@ -58,11 +59,11 @@ a{
 }
 
 h1{
-  font-size: 26px;
+  font-size: 25px;
 }
 
 p{
-  font-size: 19px;
+  font-size: 15px;
 }
 
 form input{
@@ -117,19 +118,22 @@ width: 132px;
 height: 49px
 }
 
+.fa-magnifying-glass{
+display: none;
+}
 .filtres{
   display: flex;
   align-content: center;
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  font-size: 16px;
   gap:40px;
 }
 
 .filtres-telephone{
   width: 100%;
   display: flex;
+
   gap:40px;
 }
 
@@ -138,7 +142,7 @@ height: 49px
 }
 .filtres i{
   color: #0065FC;
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .white{
@@ -155,12 +159,15 @@ height: 49px
   background-color: #deebff;
 }
 
-.filtres button i{
-  margin-right: 10px;
+.filtres .bordure{
+  display: flex;
+  align-items: center;
+  gap:5px;
 }
 
-.filtres .bordure{
-  padding-left: 10px;
+.filtres p{
+  margin: 0;
+  font-weight:bold;
 }
 
 .fa-info{
@@ -189,7 +196,8 @@ height: 49px
   width: 100%;
 }
 .offres-logement h2{
-  font-size: 100%;
+  font-size: 20px;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -209,7 +217,7 @@ height: 49px
   background-color: #F2F2F2;
   border-radius: 20px;
   padding: 30px;
-  justify-content: space-around;
+  gap:30px;
  }
  
 .populaire-carte{
@@ -276,14 +284,24 @@ height: 49px
   height: 124px;
   border-radius: 20px 20px 0px 0px; 
 }
+.carte h4, .carte p{
+  font-size: 15px;
+}
 
+.carte h4{
+  font-weight: bold;
+}
+
+.carte i{
+  font-size: 12px;
+}
 .carte h4, .carte p, .carte i{
   margin: 0;
 }
 
 .afficher-plus{
   font-weight: bold;
-  vertical-align: middle;
+  font-size: 20px;
 }
 
 .populaire-carte h2{
@@ -318,14 +336,14 @@ color: #0065FC;
 }
 
 #titre-activites{
-  font-size: inherit;
+  font-size: 20px;
 }
 
 .images-activites{
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 97%;
+  width: 100%;
   flex-wrap: wrap;
 }
 .activites{
@@ -353,6 +371,7 @@ color: #0065FC;
 display:flex;
 align-items: center;
 padding: 15px;
+height: 30px;
 }
 
 .images-activites .carte img{
@@ -365,9 +384,9 @@ padding: 15px;
 .images-activites .carte h5{
 width:100%;
 margin: auto;
-font-size: 10px;
+font-size: 15px;
 background-color: #FFFFFF;
-
+font-weight: bold;
 }
 
 footer{
@@ -379,13 +398,20 @@ footer{
 }
 
 footer h4{
-  margin-right: 170px;
   margin-top: 45px;
+  font-size: 20px;
 }
+
+footer a{
+  font-size: 20px;
+}
+
 footer ul{
   list-style: none;
   padding-left: 0;
-  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .fa-magnifying-glass, .ligne-bleue, .ligne-grise{
@@ -407,18 +433,12 @@ footer ul{
   
   .filtres{
     width: 100%;
-    gap: 0px;
   }
-
-  .filtres-telephone{
-    gap:0px;
-  }
-
+ .filtres-telephone{
+  gap: 25px;
+ }
   #rechercher {
     font-size: 15px;
-  }
-  .filtres .bordure{
-    margin-left: 60px;
   }
 
   .offres-logement{
@@ -475,17 +495,6 @@ footer ul{
     height: 267px;
     width: 100%;
    }
-
-   .images-activites .container{
-    height: 45px;
-   }
-
-  .images-activites .carte h5{
-    padding-top:2px;
-    font-size: 80%;
-    padding-left: 0px;
-    padding-bottom: 0;
-  }
   
   .info-footer h4{
     margin: auto;
@@ -585,8 +594,8 @@ footer ul{
   }
 
   form div{
-  width:350px;
- }
+    width: 100%;
+  }
 
  .fa-magnifying-glass{
   display: inline-block;
@@ -614,16 +623,11 @@ footer ul{
   width: 100%;
  }
 
- .filtres-telephone button p{
-  font-size: 10px;
- }
-
  input{
   width:65%;
  }
 
  .filtres .bordure{
-  padding-left: 5px;
   width: 45%;
  }
 
@@ -658,7 +662,6 @@ footer ul{
 
 #titre-activites{
 width: 140px;
-font-size: 27px;
 }
 
 .images-activites{
@@ -680,10 +683,6 @@ font-size: 27px;
 
 .images-activites .carte{
   padding: 0;
-}
-
-.images-activites .carte h5{
-  font-size: 120%;
 }
 
 footer{
