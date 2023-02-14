@@ -32,7 +32,6 @@ header img{
 
 header a{
   width: 75%;
-  padding-top: 30px;
 }
 .menu{
   display: flex;
@@ -42,8 +41,9 @@ header a{
 }
 
 nav a {
-  padding-top: 30px;
+  padding: 30px 15px;
   font-size: 16px;
+  border-top: solid white 3px;
 }
 
 nav .hebergement:hover{
@@ -124,9 +124,8 @@ background: #0065FC;
 border: 1px solid #0065FC;
 border-radius: 0px 15px 15px 0px;
 color: #FFFFFF;
-width: 132px;
 font-weight: 700;
-height: 49px
+padding: 16px 14px;
 }
 
 
@@ -181,8 +180,7 @@ height: 49px
 
 .fa-info{
   color: #0065FC;
-  padding-left: 8px ;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .info-tablette{
@@ -193,6 +191,10 @@ margin: 0;
   border-radius: 50%;
   border: 1px solid #d9d9d9;
   width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info-nombre-logement{
@@ -206,7 +208,7 @@ margin: 0;
   display: flex;
   justify-content:space-between;
   width: 100%;
-  gap:40px;
+  gap:30px;
 }
 .offres-logement h2{
   font-size: 22px;
@@ -226,7 +228,7 @@ margin: 0;
  .hebergement-carte{
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   flex-wrap: wrap;
   background-color: #F2F2F2;
   border-radius: 20px;
@@ -239,9 +241,10 @@ margin: 0;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #F2F2F2;  
-  width: 40%;
+  width: 30%;
   gap:30px;
   padding: 30px;
+  border-radius: 20px;
 }
 
 .cartes-pop{
@@ -351,8 +354,8 @@ margin: 0;
 .populaire-carte .carte img{
   display: inline-block;
  height: 145px;
- width: 135px;
-  border-radius: 20px 0 0 20px; 
+ width: 45%;
+ min-width: 45%;
 }
 
 .populaire-carte i{
@@ -382,7 +385,7 @@ font-size: 20px;
 .images-activites .carte, .images-activites figure{
   display: flex;
   flex-direction: column;
-  width: calc((100% - 40px)/ 4);
+  width: calc((100% - 90px)/ 4);
 }
 
 .images-activites .container{
@@ -445,7 +448,7 @@ footer ul{
   margin: 0;
 }
 
-.fa-magnifying-glass, .ligne-bleue, .ligne-grise{
+#loupe, .ligne-bleue, .ligne-grise{
   display: none;
 }
 
@@ -457,7 +460,7 @@ footer ul{
     gap:50px;
   }
 
-  nav a:hover{
+  nav button:hover{
     text-decoration: none;
   }
 
@@ -590,11 +593,12 @@ footer ul{
   width: 100%;
   }
   
-  nav a {
+  nav .hebergement:hover {
   padding-bottom: 30px;
+  border-top: none;
   }
 
-  nav a:hover{
+  nav button:hover{
   text-decoration: none;
   }
 
