@@ -8,7 +8,6 @@ html{
   max-width: 1400px;
   margin: auto;
   padding: 0 40px 0 40px;
-  /* background-color: gray; */
 }
 
 body{
@@ -18,6 +17,8 @@ body{
   margin: 0;
   max-width: 1400px;
 }
+
+/* Logo et Menu  */
 
 header{
   display: flex;
@@ -33,6 +34,7 @@ header img{
 header a{
   width: 75%;
 }
+
 .menu{
   display: flex;
   justify-content: space-around;
@@ -52,13 +54,16 @@ nav .hebergement:hover{
 }
 
 main{
-display: flex;
-flex-direction: column;
-gap: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
+
 a{
   text-decoration: none;
 }
+
+/* Titre Principal */
 
 .gros-titre{
   display: flex;
@@ -75,6 +80,8 @@ p{
   font-size: 16px;
   margin: 0;
 }
+
+/* Formulaire de Recherche */
 
 form input{
   width: 332px;
@@ -101,12 +108,21 @@ form input{
   outline: none;
 }
 
+form input{
+  font-size: 18px;
+  font-weight: 700;
+}
+
 form input::placeholder{
   color: black;
   opacity: 1;
   font-size: 18px;
   padding-left: 15px;
   font-weight: 700;
+}
+
+input:focus::placeholder{
+  color:transparent;
 }
 
 button{ 
@@ -119,13 +135,13 @@ button{
 
 
 form button{
-font-size: 18px;
-background: #0065FC;
-border: 1px solid #0065FC;
-border-radius: 0px 15px 15px 0px;
-color: #FFFFFF;
-font-weight: 700;
-padding: 16px 14px;
+  font-size: 18px;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 16px 14px;
 }
 
 
@@ -141,13 +157,13 @@ padding: 16px 14px;
 .filtres-telephone{
   width: 100%;
   display: flex;
-
   gap:40px;
 }
 
 .blue{
   color:#0065FC;
 }
+
 .filtres i{
   color: #0065FC;
   font-size: 18px;
@@ -203,6 +219,8 @@ margin: 0;
   align-items: center;
   gap: 15px;
 }
+
+/* Section Cartes */
 
 .offres-logement{
   display: flex;
@@ -267,6 +285,11 @@ margin: 0;
     border: white 5px solid;
   }
 
+  /* On mouse-over, add a deeper shadow */
+.carte:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .populaire-txt{
     display: flex;
     flex-direction: column;
@@ -279,10 +302,6 @@ margin: 0;
     width: 100%;
   }
   
-  /* On mouse-over, add a deeper shadow */
-.carte:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
   
 .hebergement-carte .container {
     display: flex;
@@ -363,6 +382,8 @@ color: #0065FC;
 font-size: 20px;
 }
 
+/* Section activités */
+
 #titre-activites{
   font-size: 22px;
   font-weight: 700;
@@ -409,6 +430,8 @@ font-size: 16px;
 background-color: #FFFFFF;
 font-weight: 700;
 }
+
+/* Footer */
 
 footer{
   background-color: #F2F2F2;
@@ -552,6 +575,8 @@ footer ul{
   }
 
 }
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est inferieure à 768px */
 
 @media all and (max-width: 767px){
   html{
@@ -704,6 +729,7 @@ footer ul{
   order: 1;
   width: 100%;
   padding: 30px 20px 50px 20px ;
+  border-radius:0%;
 }
 
 .populaire-carte img{
