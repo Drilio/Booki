@@ -485,6 +485,9 @@ footer ul{
     gap:50px;
   }
 
+  header{
+    padding-right: 0;
+  }
   nav button:hover{
     text-decoration: none;
   }
